@@ -24,10 +24,15 @@ The Note application is built on *mocha* framework.
 
 
 
+
+
 #####<a name="addnote"></a>Add note
 The *addNote* function creates a new note instance and add to the note list. It takes a note object parameter and push to the note list.
  
     addNote(note)
+
+
+
 
 
 #####<a name="listnotes"></a>List notes
@@ -36,10 +41,16 @@ The *listnotes* function returns the list of notes stored in a predefined format
     listNote()
 
 
+
+
+
 #####<a name="getnote"></a>Get note
 The *getNote* function selects a note from the note list by it unique ID.  It takes a number parameter(noteID) and returns the note content if the ID exists.
  
     getNote(note_id)
+
+
+
 
 
 #####<a name="editnote"></a>Editnote
@@ -48,10 +59,16 @@ The *editNote* function selects a note from the list by ID and allows modificati
     getNote(note_id)
 
 
+
+
+
 #####<a name="deletenote"></a>Delete note
 The *deleteNote* function selects a note from the list by ID and pops it off the note list. It takes in a number parameter(noteID).
  
     deleteNote(note_id)
+
+
+
 
 
 #####<a name="searchnote"></a>Search note
