@@ -39,7 +39,7 @@ describe("Getting note by ID works properly", function() {
     it("checks that getting note by id returns the proper string output", function() {
         assert(noteapp.getNote(0) === "Hello World");
     })
-    it("checks that undefined ID returns an invalid ID message", function() {
+    it("checks that undefined parameter returns an invalid ID message", function() {
         assert(noteapp.getNote(-1) === "Invalid ID!!!");
         assert(noteapp.getNote(1.5) === "Invalid ID!!!");  
         assert(noteapp.getNote() === "Invalid ID!!!"); 
@@ -53,7 +53,7 @@ describe("Delete method works properly", function() {
         noteapp.deleteNote(1)
         assert(initial_listcount - noteapp.notelist.length ==1)
             });
-    it("checks that undefined ID returns an invalid ID message", function() {
+    it("checks that undefined parameter returns an invalid ID message", function() {
         assert(noteapp.deleteNote(-1) === "Invalid ID!!!");
         assert(noteapp.deleteNote(1.5) === "Invalid ID!!!");
         assert(noteapp.deleteNote() === "Invalid ID!!!"); 
@@ -69,7 +69,7 @@ describe("Edit method works properly", function() {
     it("checks that it returns a success message", function() {
         assert(noteapp.edit(0, newcontent) == "Note 0 changed successfully");
             });
-    it("checks that undefined ID returns an invalid ID message", function() {
+    it("checks that undefined parameter returns an invalid ID message", function() {
         assert(noteapp.edit(-1,  newcontent) == "Invalid ID!!!");
         assert(noteapp.edit(1.5, newcontent) == "Invalid ID!!!");  
       });
