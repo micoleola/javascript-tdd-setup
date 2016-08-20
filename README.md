@@ -1,4 +1,4 @@
-#  Application Note
+#  Note Application 
 ##A JavaScript Test Driven Development
 This is a simple application that stores notes with methods to manipulate data stored.
 Each note is stored with a unique ID, note content and the author of the note.
